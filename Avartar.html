@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel = "stylesheet" href = "assets/css/style.css"/>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <label class="header_switch">
+                <input type="checkbox" id ="toggle" class="header_toggle"/>
+                <nav class = "header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href = "" class = "header__navbar-item-link">HOME</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href = "" class = "header__navbar-item-link">SERVICES</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href = "" class = "header__navbar-item-link">FAQ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href = "" class = "header__navbar-item-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="header_arrow"></span>
+            </label>
+            <!-- <label class="header__navbar-arrow"></label>  -->
+            
+           
+        </div>    
+   
+    </div> 
+    
+        <div id="content">
+            <div class="mytabs">
+                    <input type="radio" id ="tab_avartar"  name = "mytabs" checked="checked" class="switch-btn"/>
+                    <label for="tab_avartar" class ="tab_avartar content__header-heading">AVARTAR</label>
+                    <div class="tab content__main">
+                        <img src="./assets/img/img_rails.jpg" alt="rails" class = "content__main-img">
+                        <input type="file" name="uploadfile" id="img-upfile" style="display:none;"/>
+                        <label class="content__main-label" for="img-upfile">CHOOSE FILE</label>
+                    </div>
+                
+                    <input type="radio" id ="tab_profile"  name = "mytabs" class="switch-btn" />
+                    <label for="tab_profile" class = "tab_profile content__switch-btn">PROFILE</label>
+                    <div class="tab">
+                        <div class="content__text">
+                            <p>Ruby là ngôn ngữ lập trình kịch bản hướng đối tượng được sử dụng cho nhiều mục đích khác nhau như dùng xây dựng các ứng dụng web, desktop, quản lý máy chủ... Ruby được viết vào năm 1993 bởi Yukihiro Matsumoto dựa trên ngôn ngữ lập trình Smalltalk tuy nhiên có cú pháp trong sáng và đơn giản hơn rất nhiều so với Smalltalk. Ruby là ngôn ngữ lập trình kịch bản vì mã lệnh của Ruby có thể chạy trực tiếp bởi máy tính mà không cần phải biên soạn thành một tệp thực thi (tệp tin .exe trên Windows hay tệp tin binary trên Linux). Ruby là ngôn ngữ lập trình hướng đối tượng (object oriented) và mọi thứ trong Ruby đều là một đối tượng ngay cả một chuỗi đơn giản.
+                            </p>
+                        </div>
+                        <form class="content__form" action="">
+                            <div class="content__form-drop">
+                                <label for="fw">Choose a framework:</label>
+                                    <select name="fws" id="fws">
+                                        <option value="rails">Rails</option>
+                                        <option value="lavarel">Lavarel</option>
+                                        <option value="spring">Spring</option>
+                                        <option value="django">Django</option>
+                                    </select>
+                            </div>
+                           <div class="content__form-radio">
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">HTML</label><br>
+                                <input type="radio" id="css" name="fav_language" value="CSS">
+                                <label for="css">CSS</label><br>
+                                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                <label for="javascript">JavaScript</label>
+                           </div>
+                           <div class="content__form-check">
+                                <input type="checkbox" id="framework1" name="framework1" value="react">
+                                <label for="framework1"> I know React JS</label><br>
+                                <input type="checkbox" id="framework2" name="framework2" value="angular">
+                                <label for="framework2"> I know Angular JS</label><br>
+                                <input type="checkbox" id="framework3" name="framework3" value="node">
+                                <label for="framework3"> I know Node JS</label><br>
+                           </div>
+                           <div class="content__form-text">
+                                <input type = "text" class = "content__form-input-text" name = "input-text">
+                           </div>
+                           <div class="btn__submit">
+                               <input type = "submit" value = "SUBMIT" class="content__form-submit">
+                           </div>
+                        </form>
+                   </div>
+            </div>
+           
+        </div>
+        
+        <div id="footer">
+            <div class="footer__copyright">
+                <label class="footer_switch">
+                    <span class="footer_arrow"></span>
+                    <input type="checkbox" id ="toggle" class="footer_toggle"/>
+                    <span class = "footer__copyright-text">Copyright ABC Co Ltd, all rights reserve</span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
